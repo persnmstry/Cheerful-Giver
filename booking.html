@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body data-mode-banner>
 
@@ -23,6 +23,7 @@
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
+        <li><a href="tattoo.html">Tattsappeal</a></li>
         <li><a href="booking.html" class="active">Book</a></li>
         <li><a href="account.html" data-account-link>Login</a></li>
       </ul>
@@ -37,7 +38,6 @@
 
 <section class="section-tight" style="padding-top:60px;padding-bottom:0">
   <div class="container">
-    <span class="eyebrow">Booking</span>
     <h1 style="font-size:clamp(2.2rem,6vw,3.6rem)">Grab your chair.</h1>
   </div>
 </section>
@@ -132,10 +132,12 @@
             <p class="text-dim" id="done-line" style="margin-top:0"></p>
 
             <div style="display:flex;flex-direction:column;gap:10px;margin-top:26px">
-              <a class="btn btn-solid btn-block" id="wa-link" target="_blank" rel="noopener">
-                Send confirmation to WhatsApp
+              <button type="button" class="btn btn-solid btn-block" id="ics-link">
+                Add to my calendar
+              </button>
+              <a class="btn btn-ghost btn-block" id="wa-link" target="_blank" rel="noopener">
+                Message the shop on WhatsApp
               </a>
-              <a class="btn btn-ghost btn-block" id="mail-link">Email me the details</a>
               <a class="btn btn-ghost btn-block" href="account.html">My appointments</a>
             </div>
 
@@ -179,7 +181,7 @@
           <span>Unisex Salon</span>
         </a>
         <p style="margin-top:16px;max-width:36ch;font-size:0.88rem;color:var(--text-dim)">
-          A one-chair barbershop in <span data-shop="area">Osu</span>, Accra.
+          A one-chair barbershop in Accra.
           Book online, arrive, sit down.
         </p>
       </div>
@@ -187,15 +189,17 @@
         <h4>Pages</h4>
         <ul>
           <li><a href="services.html">Services</a></li>
+          <li><a href="tattoo.html">Tattsappeal</a></li>
           <li><a href="booking.html">Book a slot</a></li>
           <li><a href="account.html">My appointments</a></li>
+          <li><a href="admin.html" class="text-dim">Staff</a></li>
         </ul>
       </div>
       <div>
         <h4>Find us</h4>
         <ul>
-          <li data-shop="address">Osu, Accra</li>
-          <li><a href="#" data-tel data-shop="phonePretty">+233 00 000 0000</a></li>
+          <li data-shop="address">105 King Takie Tawiah Ave, Accra</li>
+          <li><a href="#" data-tel data-shop="phonePretty">020 007 4673</a></li>
           <li><a href="#" data-mail data-shop="email">hello@cheerfulgiver.com</a></li>
         </ul>
       </div>
@@ -208,10 +212,10 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="js/config.js"></script>
-<script src="js/slots.js"></script>
-<script src="js/data.js"></script>
-<script src="js/main.js"></script>
-<script src="js/booking.js"></script>
+<script src="config.js"></script>
+<script src="slots.js"></script>
+<script src="data.js"></script>
+<script src="main.js"></script>
+<script src="booking.js"></script>
 </body>
 </html>
