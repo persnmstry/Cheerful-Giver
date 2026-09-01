@@ -1,0 +1,45 @@
+body{
+    background-color: #0F0F0F;
+    color: #FFFFFF;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    float: right;
+
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+.book-button{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background: rgb(100, 98, 98);
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    float: right;
+}
+.book-button:hover{
+    background: white;
+    color: black;
+}
+.hero{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
